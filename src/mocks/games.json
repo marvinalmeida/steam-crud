@@ -1,0 +1,11 @@
+[
+	{
+		"id": 1,
+		"title": "Resident Evil: Village",
+		"price": 80,
+		"from": "Capcom",
+		"img": "resident.png"
+	},
+	{ "id": 2, "title": "Far Cry Primal", "price": 20, "from": "Ubsoft", "img": "farcry.jpg" },
+	{ "id": 3, "title": "Red Dead 2", "price": 52, "from": "Rockstar", "img": "reddead.jpg" }
+]
