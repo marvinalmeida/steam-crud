@@ -6,13 +6,6 @@
 	flex-direction: column;
 }
 
-.header {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-
-.header,
 .content {
 	min-height: 100px;
 	margin: 10px 0;
@@ -56,19 +49,6 @@
 .product-img {
 	width: 98px;
 	margin-right: 12px;
-}
-
-.totals {
-	padding: 30px;
-	box-shadow: 0 0 8px #ddd;
-	font-size: 16px;
-	width: 300px;
-}
-
-.totals-items {
-	display: flex;
-	justify-content: space-between;
-	margin-top: 30px;
 }
 
 .games {
