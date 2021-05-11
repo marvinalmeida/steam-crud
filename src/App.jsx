@@ -1,15 +1,9 @@
-import { useEffect, useState } from 'react';
 import './App.css';
 import { getTotalGames, getTotalPrice } from './utils/totals';
 import User from './components/User';
+import gamesMock from './mocks/games.json';
 
 function App() {
-	const [games, setGames] = useState([]);
-
-	useEffect(() => {
-		setGames(JSON.parse(localStorage.getItem('games')));
-	}, []);
-
 	return (
 		<div className="main template-default">
 			<div className="header">
@@ -20,7 +14,7 @@ function App() {
 				<div className="list">
 					<h3 className="title">Seu Carrinho</h3>
 					<div className="games">
-						{games.map((game) => (
+						{gamesMock.map((game) => (
 							<div className="games-item">
 								<div className="games-img">
 									<img src={`/${game.img}`} alt="imagem resident" />
@@ -38,11 +32,11 @@ function App() {
 					<h3 className="title">Total</h3>
 					<div className="totals-items">
 						<span>Total de itens:</span>
-						<span>{getTotalGames(games)}</span>
+						<span>{getTotalGames(gamesMock)}</span>
 					</div>
 					<div className="totals-items">
 						<span>Valor total da compra:</span>
-						<span>R$ {getTotalPrice(games)},00</span>
+						<span>R$ {getTotalPrice(gamesMock)},00</span>
 					</div>
 				</div>
 			</div>
