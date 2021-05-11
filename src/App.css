@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+.main {
+	width: 1000px;
+	margin: auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header,
+.content {
+	min-height: 100px;
+	margin: 10px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content {
+	display: flex;
+	align-items: flex-start;
+	padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+	width: 50%;
+	background-color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+	font-size: 26px;
+	color: #111;
+	font-weight: normal;
+	margin: 0;
+}
+
+.product-title {
+	font-size: 20px;
+	color: #111;
+}
+
+.product-subtitle {
+	font-size: 16px;
+	color: #525252;
+}
+
+.product-from {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #767676;
+	margin-top: 16px;
+}
+
+.product-img {
+	width: 98px;
+	margin-right: 12px;
+}
+
+.totals {
+	padding: 30px;
+	box-shadow: 0 0 8px #ddd;
+	font-size: 16px;
+	width: 300px;
+}
+
+.totals-items {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+
+.games {
+	margin: 30px 0;
+}
+
+.games-item {
+	margin: 16px 0;
+	display: flex;
+}
+.games-img img {
+	width: 98px;
+	margin-right: 16px;
+}
+
+.games-infos {
+	display: flex;
+	flex-direction: column;
 }
