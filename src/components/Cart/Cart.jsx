@@ -1,4 +1,5 @@
 import { Wrapper } from './Cart.styles';
+import CartQuantity from '../cart-quantity/cart-quantity'
 
 const Cart = (props) => (
 	<Wrapper>
@@ -14,8 +15,10 @@ const Cart = (props) => (
 						<span className="product-subtitle">{game.price}</span>
 						<span className="product-from">From {game.from}</span>
 					</div>
+					<CartQuantity quantity={game.quantity}/>
 				</div>
 			))}
+
 		</div>
 	</Wrapper>
 );

@@ -58,6 +58,7 @@
 .games-item {
 	margin: 16px 0;
 	display: flex;
+	padding-right:20px;
 }
 .games-img img {
 	width: 98px;
@@ -67,4 +68,5 @@
 .games-infos {
 	display: flex;
 	flex-direction: column;
+	flex:1;
 }

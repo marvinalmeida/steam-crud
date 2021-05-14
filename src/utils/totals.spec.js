@@ -1,12 +1,11 @@
 import { getTotalGames, getTotalPrice } from './totals';
-
-const gamesMock = [{ price: 2 }, { price: 4 }, { price: 6 }];
+import gamesMock from "../mocks/games.json"
 
 const gamesEmptyMock = [];
 
 describe('totals test', () => {
-	it('deve retornar o numero 3', () => {
-		expect(getTotalGames(gamesMock)).toBe(3);
+	it('deve retornar o numero 7', () => {
+		expect(getTotalGames(gamesMock)).toBe(7);
 		expect(getTotalGames(gamesMock)).not.toBe(1);
 	});
 
@@ -18,7 +17,7 @@ describe('totals test', () => {
 		expect(getTotalGames('')).toBe('format-invalid');
 	});
 
-	it('deve retornare soma dos preços', () => {
+	it('deve retornar o valor total do carrinho', () => {
 		expect(getTotalPrice(gamesMock)).toBe(12);
 	});
 });
