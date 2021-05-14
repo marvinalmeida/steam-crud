@@ -5,9 +5,11 @@ export const getTotalGames = (games) => {
 	if (games.length === 0) {
 		return '';
 	}
-	return games.length;
+	return games.reduce((acc, game)=>{
+		return acc + game.quantity
+	}, 0);
 };
 
 export const getTotalPrice = (games) => {
-	return games.reduce((acc, game) => acc + game.price, 0);
+	return games.reduce((acc, game) => acc + game.price * game.quantity, 0);
 };
