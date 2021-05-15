@@ -15,7 +15,7 @@ const Cart = (props) => (
 						<span className="product-subtitle">{game.price}</span>
 						<span className="product-from">From {game.from}</span>
 					</div>
-					<CartQuantity quantity={game.quantity}/>
+					<CartQuantity handleInputQuantity={props.handleInputQuantity} handleDeleteGame={props.handleDeleteGame} handleRemoveQuantity={props.handleRemoveQuantity} handleAddQuantity={props.handleAddQuantity} gameId={game.id} quantity={game.quantity}/>
 				</div>
 			))}
 
