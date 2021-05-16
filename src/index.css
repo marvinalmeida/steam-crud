@@ -9,3 +9,95 @@ body {
 code {
 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+.main {
+	width: 1000px;
+	margin: auto;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	min-height: 100px;
+	margin: 10px 0;
+}
+
+.content {
+	display: flex;
+	align-items: flex-start;
+	padding: 20px;
+}
+
+.list {
+	width: 50%;
+	background-color: white;
+}
+
+.title {
+	font-size: 26px;
+	color: #111;
+	font-weight: normal;
+	margin: 0;
+}
+
+.product-title {
+	font-size: 20px;
+	color: #111;
+}
+
+.product-subtitle {
+	font-size: 16px;
+	color: #525252;
+}
+
+.product-from {
+	font-size: 10px;
+	text-transform: uppercase;
+	color: #767676;
+	margin-top: 16px;
+}
+
+.product-img {
+	width: 98px;
+	margin-right: 12px;
+}
+
+.games {
+	margin: 30px 0;
+}
+
+.games-info{
+	display: flex;
+	flex-direction: column;
+}
+
+.games-item {
+	margin: 16px 0;
+	display: flex;
+	padding-right:20px;
+}
+.games-img img {
+	width: 98px;
+	margin-right: 16px;
+}
+
+.product-add-btn.MuiButtonBase-root{
+	background-color: #008844;
+	border-radius:25px;
+	color:white;
+	text-transform: none;
+	margin-top: 10px;
+	width: 180px;
+}
+.product-add-btn.MuiButtonBase-root:hover{
+	background-color:#207048;
+	opacity: 0.9;
+}
+
+.games-infos {
+	display: flex;
+	flex-direction: column;
+	flex:1;
+}
+

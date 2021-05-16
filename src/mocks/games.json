@@ -5,7 +5,6 @@
 		"price": 80,
 		"from": "Capcom",
 		"img": "resident.png",
-		"quantity": 5,
 		"stock": 7
 	},
 	{
@@ -14,7 +13,6 @@
 		"price": 20,
 		"from": "Ubsoft",
 		"img": "farcry.jpg",
-		"quantity": 1,
 		"stock": 7
 	},
 	{
@@ -23,7 +21,6 @@
 		"price": 52,
 		"from": "Rockstar",
 		"img": "reddead.jpg",
-		"quantity": 1,
 		"stock": 5
 	}
 ]
