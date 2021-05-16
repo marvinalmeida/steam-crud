@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Layout from './components/layout/layout';
+import Layout from './components/Layout/Layout';
 import gamesMock from './mocks/games.json';
 import Totals from './components/Totals/Totals';
 import Cart from './components/Cart/Cart';

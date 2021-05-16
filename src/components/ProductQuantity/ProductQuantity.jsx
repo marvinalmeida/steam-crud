@@ -1,6 +1,6 @@
 import RemoveCircleOutlineIcon from '@material-ui/icons/RemoveCircleOutline';
 import AddIcon from '@material-ui/icons/Add';
-import { Wrapper } from './cart-quantity.styles';
+import { Wrapper } from './ProductQuantity.styles';
 import DeleteIcon from '@material-ui/icons/Delete';
 
 const CartQuantity = (props) => {

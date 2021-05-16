@@ -1,5 +1,5 @@
 import { Wrapper } from './Cart.styles';
-import CartQuantity from '../cart-quantity/cart-quantity'
+import ProductQuantity from '../ProductQuantity/ProductQuantity'
 
 const Cart = (props) => (
 	<Wrapper>
@@ -15,7 +15,7 @@ const Cart = (props) => (
 						<span className="product-subtitle">{game.price}</span>
 						<span className="product-from">From {game.from}</span>
 					</div>
-					<CartQuantity handleInputQuantity={props.handleInputQuantity} handleDeleteGame={props.handleDeleteGame} handleRemoveQuantity={props.handleRemoveQuantity} handleAddQuantity={props.handleAddQuantity} gameId={game.id} quantity={game.quantity}/>
+					<ProductQuantity handleInputQuantity={props.handleInputQuantity} handleDeleteGame={props.handleDeleteGame} handleRemoveQuantity={props.handleRemoveQuantity} handleAddQuantity={props.handleAddQuantity} gameId={game.id} quantity={game.quantity}/>
 				</div>
 			))}
 
