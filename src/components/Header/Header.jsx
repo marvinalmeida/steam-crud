@@ -1,12 +1,14 @@
-import User from '../User/User';
 import { Wrapper } from './Header.styles';
-import { Button } from '@material-ui/core';
+import { Badge, Button } from '@material-ui/core';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import HomeIcon from '@material-ui/icons/Home';
 import { Link } from 'react-router-dom';
+import {useState} from 'react'
 
-const Header = () => (
-	<Wrapper>
+const Header = () => {
+	const [totals, setTotals]=useState(JSON.parse(localStorage.getItem('games')|| '[]').length)
+
+	return <Wrapper>
 		<img src="/logo.png" alt="logo steam" />
 
 		<Link to="/">
@@ -16,11 +18,13 @@ const Header = () => (
 		</Link>
 
 		<Link to="/sacola">
-			<Button startIcon={<ShoppingBasketIcon />} variant="text" color="primary">
-				Sacola
-			</Button>
+			<Badge anchorOrigin={{horizontal:'left', vertical:'top'}} badgeContent={totals} color="primary">
+				<Button startIcon={<ShoppingBasketIcon />} variant="text" color="primary">
+					Sacola
+				</Button>
+			</Badge>
 		</Link>
-	</Wrapper>
-);
+	</Wrapper>;
+};
 
 export default Header;

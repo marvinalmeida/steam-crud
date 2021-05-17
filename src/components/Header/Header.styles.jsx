@@ -7,7 +7,7 @@ export const Wrapper = styled.div`
 	min-height: 100px;
 	margin: 10px 0;
 	.MuiButton-root{
-		margin: auto 10px;
+		margin: auto 20px;
 		color:#111;
 	}
 	a {
